@@ -1,0 +1,5 @@
+xampp/
+.idea/
+.vscode/
+*.log
+node_modules/
