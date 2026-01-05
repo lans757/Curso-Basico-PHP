@@ -22,7 +22,7 @@ echo "Fruta en posicion 0: " . $frutas[0] . "<br>";
 
 /** @variable de tipo array $persona es un Arreglo asociativo donde los índices son claves definidas por el programador */
 $persona = [
-    "nombre" => "Said",
+    "nombre" => "usuario",
     "edad" => 25,
     "profesion" => "Desarrollador"
 ];
@@ -36,7 +36,7 @@ echo "Edad de la persona: " . $persona["edad"] . "<br>";
 $usuarios = [
     ["nombre" => "Ana", "edad" => 20],
     ["nombre" => "Luis", "edad" => 30],
-    ["nombre" => "Said", "edad" => 25]
+    ["nombre" => "usuario", "edad" => 25]
 ];
 echo "Nombre del tercer usuario: " . $usuarios[2]["nombre"] . "<br>";
 
@@ -54,7 +54,7 @@ $cursos = [
             ["nombre" => "Luis", "nota" => 15]
         ],
         "GrupoB" => [
-            ["nombre" => "Said", "nota" => 20],
+            ["nombre" => "usuario", "nota" => 20],
             ["nombre" => "Carlos", "nota" => 17]
         ]
     ],
