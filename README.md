@@ -21,6 +21,8 @@ El curso está organizado en módulos prácticos que cubren los pilares fundamen
 - 📝 **Formularios:** Procesamiento de datos enviados por el usuario (`GET` y `POST`).
 - ⚙️ **Funciones:** Creación de bloques de código reutilizables y funciones nativas (matemáticas, texto, etc.).
 - 🧩 **Include y Require:** Organización del código en múltiples archivos.
+- 🔐 **Sesiones:** Manejo de persistencia de datos y control de acceso del usuario.
+- 🍪 **Cookies:** Almacenamiento de datos en el lado del cliente y seguridad.
 - 🛠️ **Herramientas de Depuración:** Uso de `var_dump`, `print_r` y manejo de errores con `die()`.
 
 ---
