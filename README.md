@@ -23,6 +23,7 @@ El curso está organizado en módulos prácticos que cubren los pilares fundamen
 - 🧩 **Include y Require:** Organización del código en múltiples archivos.
 - 🔐 **Sesiones:** Manejo de persistencia de datos y control de acceso del usuario.
 - 🍪 **Cookies:** Almacenamiento de datos en el lado del cliente y seguridad.
+- 🗄️ **Base de Datos (PDO):** Conexión segura a bases de datos, manejo de errores y consultas SQL (SELECT).
 - 🛠️ **Herramientas de Depuración:** Uso de `var_dump`, `print_r` y manejo de errores con `die()`.
 
 ---
