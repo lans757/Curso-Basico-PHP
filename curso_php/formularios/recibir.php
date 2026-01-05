@@ -11,11 +11,12 @@
 echo "<h2>Datos Recibidos:</h2>";
 
 // Recogemos los datos usando el nombre que pusimos en el atributo 'name' del HTML
-$nombre = $_POST['nombre'];
-$correo = $_POST['correo'];
+// Usamos htmlspecialchars() para evitar ataques XSS (inyección de scripts)
+$nombre = isset($_POST['nombre']) ? htmlspecialchars($_POST['nombre']) : '';
+$correo = isset($_POST['correo']) ? htmlspecialchars($_POST['correo']) : '';
 
 if (empty($nombre) || empty($correo)) {
-    echo "Por favor, rellena todos los campos.";
+    echo "<p style='color:red;'>Por favor, rellena todos los campos correctamente.</p>";
 } else {
     echo "Hola <strong>$nombre</strong>, gracias por registrarte.<br>";
     echo "Te hemos enviado un mensaje de confirmación a: <strong>$correo</strong>";

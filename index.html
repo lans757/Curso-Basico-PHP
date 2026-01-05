@@ -15,209 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --primary: #6366f1;
-        --primary-light: #818cf8;
-        --secondary: #a855f7;
-        --bg: #0f172a;
-        --card-bg: rgba(30, 41, 59, 0.7);
-        --text-main: #f8fafc;
-        --text-muted: #94a3b8;
-        --glass-border: rgba(255, 255, 255, 0.1);
-        --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
-      }
+    <link rel="stylesheet" href="style.css" />
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background-color: var(--bg);
-        color: var(--text-main);
-        line-height: 1.6;
-        overflow-x: hidden;
-        background-image: radial-gradient(
-            circle at 20% 20%,
-            rgba(99, 102, 241, 0.15) 0%,
-            transparent 40%
-          ),
-          radial-gradient(
-            circle at 80% 80%,
-            rgba(168, 85, 247, 0.15) 0%,
-            transparent 40%
-          );
-        min-height: 100vh;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: "Outfit", sans-serif;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 4rem 2rem;
-      }
-
-      header {
-        text-align: center;
-        margin-bottom: 5rem;
-        animation: fadeInDown 1s ease-out;
-      }
-
-      .badge {
-        display: inline-block;
-        padding: 0.5rem 1.5rem;
-        background: var(--glass-border);
-        border: 1px solid var(--glass-border);
-        border-radius: 99px;
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: var(--primary-light);
-        margin-bottom: 1.5rem;
-        backdrop-filter: blur(10px);
-      }
-
-      h1 {
-        font-size: clamp(2.5rem, 8vw, 4.5rem);
-        font-weight: 700;
-        margin-bottom: 1.5rem;
-        background: linear-gradient(to right, #fff, #94a3b8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        letter-spacing: -0.02em;
-      }
-
-      .tagline {
-        font-size: 1.25rem;
-        color: var(--text-muted);
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 4rem;
-      }
-
-      .card {
-        background: var(--card-bg);
-        border: 1px solid var(--glass-border);
-        border-radius: 24px;
-        padding: 2.5rem;
-        text-decoration: none;
-        color: inherit;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        backdrop-filter: blur(16px);
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-      }
-
-      .card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--gradient);
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        z-index: -1;
-      }
-
-      .card:hover {
-        transform: translateY(-10px) scale(1.02);
-        border-color: var(--primary-light);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      }
-
-      .card-icon {
-        width: 60px;
-        height: 60px;
-        background: rgba(99, 102, 241, 0.1);
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        color: var(--primary-light);
-        transition: transform 0.3s ease;
-      }
-
-      .card:hover .card-icon {
-        transform: rotate(-10deg) scale(1.1);
-        background: var(--primary);
-        color: white;
-      }
-
-      .card h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-
-      .card p {
-        color: var(--text-muted);
-        font-size: 0.95rem;
-      }
-
-      .arrow {
-        margin-top: auto;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-weight: 600;
-        color: var(--primary-light);
-        opacity: 0.8;
-        transition: gap 0.3s ease;
-      }
-
-      .card:hover .arrow {
-        gap: 0.75rem;
-        opacity: 1;
-      }
-
-      footer {
-        margin-top: 8rem;
-        text-align: center;
-        padding-bottom: 4rem;
-        color: var(--text-muted);
-        border-top: 1px solid var(--glass-border);
-        padding-top: 3rem;
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .container {
-          padding: 2rem 1rem;
-        }
-        header {
-          margin-bottom: 3rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -314,6 +113,27 @@
           <p>
             Uso de include y require para organizar tus proyectos en múltiples
             archivos.
+          </p>
+          <div class="arrow">Explorar modulo &rarr;</div>
+        </a>
+        <!-- Sesiones -->
+        <a href="curso_php/sesiones/" class="card" id="card-sesiones">
+          <div class="card-icon"><span>🔐</span></div>
+          <h3>Sesiones</h3>
+          <p>
+            Manejo de persistencia de datos entre páginas. Login básico y
+            control de usuario.
+          </p>
+          <div class="arrow">Explorar modulo &rarr;</div>
+        </a>
+
+        <!-- Cookies -->
+        <a href="curso_php/cookies/" class="card" id="card-cookies">
+          <div class="card-icon"><span>🍪</span></div>
+          <h3>Cookies</h3>
+          <p>
+            Almacenamiento de datos en el cliente. Configuración, lectura y
+            seguridad con htmlspecialchars.
           </p>
           <div class="arrow">Explorar modulo &rarr;</div>
         </a>
